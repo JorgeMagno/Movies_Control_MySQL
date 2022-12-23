@@ -4,7 +4,15 @@ Projeto desenvolvido a partir de um desafio na [DIO](https://digitalinnovation.o
 
 ## Configuração do Projeto
 
-Query SQL de criação da tabela usada no projeto: 
+Querys SQL de criação da tabela usada no projeto: 
+
+```
+CREATE DATABASE moviesControll;
+```
+
+```
+USE moviesControll;
+```
 
 ```
 CREATE TABLE IF NOT EXISTS `filmes` (
