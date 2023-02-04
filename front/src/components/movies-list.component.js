@@ -115,7 +115,7 @@ export default class MoviesList extends Component {
           </div>
         </div>
         <div className="col-md-6">
-          <h4>Lista de Filmes</h4>
+          <h4 className="film-list">Lista de Filmes</h4>
 
           <ul className="list-group">
             {movies &&
@@ -133,17 +133,14 @@ export default class MoviesList extends Component {
               ))}
           </ul>
 
-          <button
-            className="m-3 btn btn-sm btn-danger"
-            onClick={this.removeAllMovies}
-          >
+          <button onClick={this.removeAllMovies} className="btn btn-sm btn-danger">
             Remover Tudo
           </button>
         </div>
         <div className="col-md-6">
           {currentMovie ? (
-            <div>
-              <h4>Filme</h4>
+            <div className="description">
+              <h4>DESCRIÇÃO</h4>
               <div>
                 <label>
                   <strong>Título:</strong>
@@ -171,9 +168,9 @@ export default class MoviesList extends Component {
               </Link>
             </div>
           ) : (
-            <div>
+            <div className="choice-movie">
               <br />
-              <p>Clique em um filme...</p>
+              <p>ESCOLHA UM FILME</p>
             </div>
           )}
         </div>

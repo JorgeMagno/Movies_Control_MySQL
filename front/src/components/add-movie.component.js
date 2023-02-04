@@ -72,7 +72,7 @@ export default class AddMovie extends Component {
           <div>
             <h4>Você enviou com sucesso!</h4>
             <button className="btn btn-success" onClick={this.newMovie}>
-              Add
+              Adicionar outro
             </button>
           </div>
         ) : (

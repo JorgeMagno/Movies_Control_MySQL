@@ -186,7 +186,7 @@ export default class Movie extends Component {
         ) : (
           <div>
             <br />
-            <p>Clique em um filme...</p>
+            <p>Escolha um Filme</p>
           </div>
         )}
       </div>
