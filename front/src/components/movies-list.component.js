@@ -157,7 +157,10 @@ export default class MoviesList extends Component {
                 <label>
                   <strong>Status:</strong>
                 </label>{" "}
-                {currentMovie.visto ? "Visto" : "Pendente"}
+                {currentMovie.visto ? 
+                (<button className="btn btn-sm btn-success"> Visto </button>) 
+                : 
+                (<button className="btn btn-sm btn-danger"> Pendente </button>)}
               </div>
 
               <Link
